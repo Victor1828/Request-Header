@@ -14,7 +14,7 @@ router.get('/api/whoami', function(req, res, next) {
   var language = req.acceptsLanguages()[0];
   var software = req.useragent.platform + '; ' + req.useragent.os;
   var browser = req.useragent.browser;
-  res.json({ipadsress: ip, language: language, software: software, browser: browser});
+  res.json({ipaddress: ip, language: language, software: software, browser: browser});
 });
 
 module.exports = router;
