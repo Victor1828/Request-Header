@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Request Header Microservice
+  h2 Users story
+  ul
+    li I can get the IP address, language and operating system for my browser.
+  ul 
+  h2 Expected Output:
+  code {ipaddress: "187.220.69.142", language: "es-ES", software: "Linux; Linux 64", browser: "Chrome"}
+  br
+  h2 Click the button to find out yours!
+  button  
+    a(href="/api/whoami")="Click Me!"
+
